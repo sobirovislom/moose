@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>Moose - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script nonce="3013e95a-4990-4fc7-b8ae-f520ff86bb89">(function (w, d) {
+        !function (e, f, g, h) {
+            e.zarazData = e.zarazData || {};
+            e.zarazData.executed = [];
+            e.zaraz = {deferred: [], listeners: []};
+            e.zaraz.q = [];
+            e.zaraz._f = function (i) {
+                return function () {
+                    var j = Array.prototype.slice.call(arguments);
+                    e.zaraz.q.push({m: i, a: j})
+                }
+            };
+            for (const k of ["track", "set", "debug"]) e.zaraz[k] = e.zaraz._f(k);
+            e.zaraz.init = () => {
+                var l = f.getElementsByTagName(h)[0], m = f.createElement(h), n = f.getElementsByTagName("title")[0];
+                n && (e.zarazData.t = f.getElementsByTagName("title")[0].text);
+                e.zarazData.x = Math.random();
+                e.zarazData.w = e.screen.width;
+                e.zarazData.h = e.screen.height;
+                e.zarazData.j = e.innerHeight;
+                e.zarazData.e = e.innerWidth;
+                e.zarazData.l = e.location.href;
+                e.zarazData.r = f.referrer;
+                e.zarazData.k = e.screen.colorDepth;
+                e.zarazData.n = f.characterSet;
+                e.zarazData.o = (new Date).getTimezoneOffset();
+                if (e.dataLayer) for (const r of Object.entries(Object.entries(dataLayer).reduce(((s, t) => ({...s[1], ...t[1]}))))) zaraz.set(r[0], r[1], {scope: "page"});
+                e.zarazData.q = [];
+                for (; e.zaraz.q.length;) {
+                    const u = e.zaraz.q.shift();
+                    e.zarazData.q.push(u)
+                }
+                m.defer = !0;
+                for (const v of [localStorage, sessionStorage]) Object.keys(v || {}).filter((x => x.startsWith("_zaraz_"))).forEach((w => {
+                    try {
+                        e.zarazData["z_" + w.slice(7)] = JSON.parse(v.getItem(w))
+                    } catch {
+                        e.zarazData["z_" + w.slice(7)] = v.getItem(w)
+                    }
+                }));
+                m.referrerPolicy = "origin";
+                m.src = "https://preview.colorlib.com/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(e.zarazData)));
+                l.parentNode.insertBefore(m, l)
+            };
+            ["complete", "interactive"].includes(f.readyState) ? zaraz.init() : e.addEventListener("DOMContentLoaded", zaraz.init)
+        }(w, d, 0, "script");
+    })(window, document);</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/">moose</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/blog/" class="nav-link">Articles</a></li>
+                <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/contact/" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block content %}
+
+{% endblock %}
+
+
+<footer class="ftco-footer">
+    <div class="container">
+        <div class="row mb-5 justify-content-between">
+            <div class="col-sm-12 col-md-4">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2 logo"><a href="#">Moose</a></h2>
+                    <p>Far far away, behind the word mountains, far from the countries.</p>
+                    <ul class="ftco-footer-social list-unstyled mt-2">
+                        <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                    <h2 class="ftco-heading-2">Info</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Career</a></li>
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Team</a></li>
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span>
+                            </li>
+                            <li><a href="#"><span class="icon fa fa-phone"></span><span
+                                    class="text">+2 392 3929 210</span></a></li>
+                            <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text"><span
+                                    class="__cf_email__" data-cfemail="a1c8cfc7cee1d8ced4d3c5ceccc0c8cf8fc2cecc">[email&#160;protected]</span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0 py-5 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mb-0" style="color: rgba(255,255,255,.5);">Copyright &copy;<script data-cfasync="false"
+                                                                                                 src="https://preview.colorlib.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="fa fa-heart color-danger"
+                                                                            aria-hidden="true"></i> by <a
+                                href="https://colorlib.com/" target="_blank" rel="nofollow noopener">Colorlib</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"/>
+    </svg>
+</div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js/scrollax.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+<script src="{% static 'js/google-map.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"76a86b8ace29d96b","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from preview.colorlib.com/theme/moose/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 13:44:46 GMT -->
+</html>
